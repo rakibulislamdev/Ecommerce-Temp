@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Register-Page</title>
+</head>
+
+<body>
+    <section>
+        <div class="flex gap-10 w-full py-5">
+            <div class="w-1/2 hidden lg:block">
+                <img src="./assets/side-image.png" alt="" class="w-[600px]">
+            </div>
+
+            <div class="flex items-center justify-center lg:justify-start lg:w-1/2 w-full">
+                <div>
+                    <div>
+                        <h2 class="font-normal text-3xl md:text-4xl leading-12">Create an account</h2>
+                        <h3 class="font-base text-sm pt-4">Enter your details below</h3>
+                    </div>
+
+                    <div class="py-5">
+                        <form>
+                            <input type="text" id="name" placeholder="Name" required
+                                class="block w-full py-2 border-b-2 border-b-gray-300 focus:outline-none">
+                            <input type="text" id="email" placeholder="Email or Phone Number" required
+                                class="block w-full my-4 md:my-7 py-2 border-b-2 border-b-gray-300 focus:outline-none">
+                            <input type="password" id="password" placeholder="Password" required
+                                class="block w-full py-2 border-b-2 border-b-gray-300 focus:outline-none">
+
+                            <div class="font-normal">
+                                <button
+                                    class="w-full bg-[#DB4444] py-2 md:py-4 mt-10 rounded text-white cursor-pointer">Create
+                                    Account</button>
+                                <button
+                                    class="w-full border border-gray-300 bg-white py-2 md:py-4 mt-4 rounded text-[#000] flex justify-center items-center gap-2 cursor-pointer">
+                                    <img src="./assets/Icon-Google.png" alt="">
+                                    Sign up with
+                                    Google</button>
+                            </div>
+
+                            <div class="text-sm md:text-base text-center mt-5 font-normal">
+                                <p>Already have account? <a href="#" class="text-[#000] underline font-medium">Login</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
